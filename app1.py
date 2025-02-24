@@ -30,7 +30,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Botón para descargar el archivo PDF en la barra lateral antes de la sección de ayuda
 with open("modelo.pdf", "rb") as file:
     st.sidebar.download_button(
-        label="Descargar PDF - Comprar Semanas",
+        label="Descargar PDF - Modelo",
         data=file,
         file_name="modelo.pdf",
         mime="application/pdf"
