@@ -32,7 +32,7 @@ with open("comprar_semanas.pdf", "rb") as file:
     st.sidebar.download_button(
         label="Descargar PDF - Comprar Semanas",
         data=file,
-        file_name="comprar_semanas.pdf",
+        file_name="modelo.pdf",
         mime="application/pdf"
     )
 
