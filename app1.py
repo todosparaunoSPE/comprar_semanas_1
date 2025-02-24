@@ -27,7 +27,14 @@ background-size:16px 16px;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
+# Botón para descargar el archivo PDF en la barra lateral antes de la sección de ayuda
+with open("comprar_semanas.pdf", "rb") as file:
+    st.sidebar.download_button(
+        label="Descargar PDF - Comprar Semanas",
+        data=file,
+        file_name="comprar_semanas.pdf",
+        mime="application/pdf"
+    )
 
 # Título de la aplicación
 st.title("Simulación de Crowdfunding para Aportaciones Voluntarias en Modalidad 40 del IMSS")
